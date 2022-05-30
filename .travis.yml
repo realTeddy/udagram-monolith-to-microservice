@@ -22,7 +22,7 @@ script:
   - docker tag udagram-api-feed tewodros/udagram-api-feed:v0
   - docker tag udagram-api-user tewodros/udagram-api-user:v0
   - docker tag udagram-api-frontend tewodros/udagram-frontend:v0
-  - docker tag udagram-api-reverseproxy tewodors/udagram-api-reverseproxy:v0
+  - docker tag udagram-api-reverseproxy tewodors/udagram-reverseproxy:v0
 
 # Tasks to perform after the process is successful. Formatting the Docker username and password as below enables you to programmatically log in without having the password exposed in logs.
 after_success:
@@ -30,4 +30,4 @@ after_success:
 - docker push tewodros/udagram-api-feed:v0
 - docker push tewodros/udagram-api-user:v0
 - docker push tewodros/udagram-frontend:v0
-- docker push tewodors/udagram-api-reverseproxy:v0
+- docker push tewodors/udagram-reverseproxy:v0
