@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-api-feed
-        image: tewodros/udagram-api-feed:v1
+        image: tewodros/udagram-api-feed:v2
         imagePullPolicy: Always
         resources:
           requests:
