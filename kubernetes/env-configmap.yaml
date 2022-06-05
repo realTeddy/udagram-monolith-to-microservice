@@ -10,6 +10,6 @@ data:
   AWS_REGION: us-east-1
   AWS_PROFILE: td_aws
   JWT_SECRET: testing
-  URL: http://localhost:8100
+  URL: http://a6f564943e9434e7baa0354f57c6598a-919202803.us-east-1.elb.amazonaws.com:8100
 metadata:
   name: env-config
