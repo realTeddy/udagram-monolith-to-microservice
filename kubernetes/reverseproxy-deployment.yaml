@@ -5,7 +5,7 @@ metadata:
   labels: 
     app: udagram-reverseproxy
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: udagram-reverseproxy
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-reverseproxy
-        image: tewodros/udagram-reverseproxy:v2
+        image: tewodros/udagram-reverseproxy:v3
         imagePullPolicy: Always
         resources:
           requests:
@@ -27,4 +27,5 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 8080
+      restartPolicy: Always
         
