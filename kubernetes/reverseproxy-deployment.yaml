@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-reverseproxy
-        image: tewodros/udagram-reverseproxy:v3
+        image: tewodros/udagram-reverseproxy:v4
         imagePullPolicy: Always
         resources:
           requests:
