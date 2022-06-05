@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aws-auth
+  namespace: kube-system
+data:
+  mapRoles: |
+    - rolearn: arn:aws:iam::973138903933:role/tdstacknode-NodeInstanceRole-LC8DH6FUR6GM
+      username: system:node:{{EC2PrivateDNSName}}
+      groups:
+        - system:bootstrappers
+        - system:nodes
+  mapUsers: |
+    - userarn: arn:aws:iam::973138903933:user/td_aws_new
+      username: td_aws_new
+      groups:
+        - system:masters
